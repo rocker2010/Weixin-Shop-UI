@@ -40,30 +40,32 @@
     <h1 class="title2">V-Shop Name 1</h1>
     <!--轮显图片-->
     <div class="topImg mb10">
-    <div id="slider" class="swipe" style="visibility: visible;">
+    <a class="arrow-left" href="#"></a> 
+    <a class="arrow-right" href="#"></a>
+    <!--<div id="slider" class="swipe">
       <div class="swipe-wrap">
-        <figure>
-          <div class="wrap">
+          <div class="swiper-slide">
             <a class="image" style="background:url(images/u34.jpg) center no-repeat;background-size: cover;height:100%"> </a>
           </div>
-        </figure>
-        <figure>
-          <div class="wrap">
+          <div class="swiper-slide">
             <a class="image" style="background:url(images/u236.jpg) center no-repeat;background-size: cover;height:100%"> </a>
           </div>
-        </figure>
-        <figure>
-          <div class="wrap">
+          <div class="swiper-slide">
             <a class="image" style="background:url(images/u237.jpg) center no-repeat;background-size: cover;height:100%"> </a>
           </div>
-        </figure>
-        <figure>
-          <div class="wrap">
+          <div class="swiper-slide">
             <a class="image" style="background:url(images/u238.jpg) center no-repeat;background-size: cover;height:100%"> </a>
           </div>
-        </figure>
+      </div>
+    </div>-->
+    <div class="swiper-container"  id="slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a class="image" style="background:url(images/u236.jpg) center no-repeat;background-size: cover;height:100%"></a></div>
+        <div class="swiper-slide"><a class="image" style="background:url(images/u237.jpg) center no-repeat;background-size: cover;height:100%"></a></div>
+        <div class="swiper-slide"><a class="image" style="background:url(images/u238.jpg) center no-repeat;background-size: cover;height:100%"></a></div>
       </div>
     </div>
+    <div class="pagination"></div>
     <nav>
       <ul id="position" style="display:block">
         <li class="on"></li>
@@ -134,19 +136,22 @@
 </article>
 <script src="css/js/swipe.js"></script> 
 <script>
-var slider =
-  Swipe(document.getElementById('slider'), {
-    auto: 3000,
-    continuous: true,
-    callback: function(pos) {
-      var i = bullets.length;
-      while (i--) {
-        bullets[i].className = ' ';
-      }
-      bullets[pos].className = 'on';
-    }
-  });
-var bullets = document.getElementById('position').getElementsByTagName('li');
-</script>
+  var mySwiper = new Swiper('#slider',{
+    pagination: '.pagination',
+    loop:true,
+    grabCursor: true,
+		autoplay: 1000,
+		autoplayDisableOnInteraction:false
+  })
+  $('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipePrev()
+  })
+  $('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipeNext()
+  })
+  </script>
+
 </body>
 </html>
