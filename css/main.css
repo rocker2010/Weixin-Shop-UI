@@ -85,7 +85,7 @@ p {
 	overflow: hidden;
 	position: relative;
 }
-.swipe-wrap > .swiper-slide {
+.swipe-wrap > figure {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -97,16 +97,16 @@ p {
 	overflow: hidden;
 	position: relative;
 }
-#slider {
+#slider figure {
 	display: block;
 }
-#slider div.swiper-slide {
+#slider figure div.wrap {
 	max-width: 960px;
 	height: 350px;
 	display: block;
 	position: relative;
 }
-#slider div a {
+#slider figure div a {
 	display: block;
 	height: inherit;
 }
