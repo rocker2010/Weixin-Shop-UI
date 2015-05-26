@@ -11,7 +11,9 @@
 <script type="text/javascript" src="css/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="css/js/jquery.appear.js"></script>
 <script type="text/javascript" src="css/js/jquery.countTo.js"></script>
+<script type="text/javascript" src="css/js/jquery.easytabs.js"></script>
 <script type="text/javascript" src="css/js/js.js"></script>
+<script>$(document).ready( function() {$('#tab-container').easytabs();})</script>
 <title>多彩生活</title>
 </head>
 <body>
@@ -52,7 +54,18 @@
     <a href="#" class="ylfx"></a>
     </div>
     <div class="p10 bgwh">
-    <div class="item"><a href="#" class="sel">已选产品<span class="b ml10 cr">9</span>/12</a><a href="#">名酒汇</a><a href="#">奢侈人生</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a></div>
+    <div id="tab-container">
+      <ul class="mt">
+        <li><a href="#tabcontent1">已选产品</a></li>
+        <li><a href="#tabcontent2">产品分类2</a></li>
+        <li><a href="#tabcontent3">产品分类3</a></li>
+      </ul>
+      <div class="tab-container">
+        <div id="tabcontent1"><div class="item"><a href="#" class="sel">已选产品<span class="b ml10 cr">9</span>/12</a><a href="#">名酒汇</a><a href="#">奢侈人生</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a></div></div>
+        <div style="display: none;" id="tabcontent2"><div class="item"><a href="#">奢侈人生</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a></div></div>
+        <div id="tabcontent3"><div class="item"><a href="#">名酒汇</a><a href="#">奢侈人生</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a><a href="#">名送福袋表汇</a></div></div>
+      </div>
+    </div>
     <p class="tr"><a href="" class="cbl f13">什么是店铺等级加成？</a></p>
     <div class="mb10 bd2 pro ovh p15">
       <div class="fl proL"><img src="images/1.jpg" alt="" class="pct100"></div>

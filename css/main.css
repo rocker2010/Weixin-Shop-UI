@@ -578,7 +578,7 @@ header nav a span {
 	background-size: 11px;
 	left: 10px;
 }
-.nav1, .nav2, .nav3, .nav4, .nav5, .nav6, .nav7, .nav8, .zan {
+.nav1, .nav2, .nav3, .nav4, .nav5, .nav6, .nav7, .nav8, .zan,.next {
 	font-style:normal;
 	font-family:"iconfont" !important;
 	font-size: 27px;
@@ -689,6 +689,16 @@ font-weight: bold;
 }
 .nav9:before {
 	content: "\e609";
+}
+.next{	transform:rotate(90deg);
+-ms-transform:rotate(90deg); 	/* IE 9 */
+-moz-transform:rotate(90deg); 	/* Firefox */
+-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+-o-transform:rotate(90deg); 
+display: inline-block;}
+.next:before {
+	content: "\e613";
+	color:#CCC
 }
 .zan {
 }
@@ -1066,13 +1076,13 @@ color:#fff!important;
 	display: inline-block;
 	height: 30px;
 	line-height: 30px;
-	background: #f8f8f8;
+	background: #fff;
 	border: 1px #E0E0E0 solid;
 	border-radius: 5px;
 	margin: 2px 5px 2px 0;
 }
 .item a.sel {
-	background: #f8f8f8;
+	background: #fff;
 	color: #c51230;
 	border: 1px #c51230 solid;
 }
@@ -1784,6 +1794,41 @@ border-bottom: 1px #eee solid;
 	padding: 10px 0;
 	border-top: 2px #333 solid;
 	text-align: center;
+}
+.mt {
+	overflow: hidden;
+	position: relative;
+	top: 2px;
+	left: 50%;
+	margin-left: -128px;
+}
+.mt li {
+	border-left:1px #999 solid;
+	border-top:1px #999 solid;
+	border-right:1px #999 solid;
+	float:left;
+	margin-right:5px;
+	border-bottom: 0;
+	padding: 7px;
+	margin-bottom: 0;
+	text-align: center;
+}
+.mt li.active {
+background: #f8f8f8;
+border-top: 2px #c51230 solid;
+}
+.mt li a.active {
+	font-weight:bold
+}
+.tab-container {
+	overflow:hidden;
+	border-top: 1px #999 dotted;
+	background: white;
+	padding:10px 10px 0 10px;
+	background:#f8f8f8;
+	border-bottom: 1px #999 dotted;
+	margin-bottom:10px;
+	position:relative
 }
 .add, .min {
 	position: relative;
