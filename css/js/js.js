@@ -10,6 +10,14 @@ var liCont = $('#main > .nav li');
      });
 	}
 
+function subImg(imgNum){
+	$("#"+imgNum).append("<div class='star-dh'></div>")
+	setTimeout(function () {$("#"+imgNum).find("img").addClass("vv");}, 300);
+setTimeout(function () {
+        $(".star-dh").hide();
+    }, 700);
+	}
+
 $(document).ready(function() {
 		jQuery('.pm,.dj').each(function() {
 			jQuery(this).appear(function() {
