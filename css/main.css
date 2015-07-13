@@ -327,6 +327,7 @@ header nav a span {
 #main {
 	width: 100%;
 	position:absolute;
+	box-sizing: border-box;
 }
 #menu {
 	position: absolute;
@@ -442,10 +443,10 @@ header nav a span {
 	color: #09F!important
 }
 .cy {
-	color: #FF9900
+	color: #FF9900!important
 }
 .cyl {
-	color: #FF0
+	color: #FF0!important
 }
 .wh {
 	color: #fff;
@@ -501,26 +502,8 @@ header nav a span {
 	src: url('iconfont.eot'); /* IE9*/
 	src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('iconfont.woff') format('woff'), /* chrome、firefox */ url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
-@font-face {
-	font-family: "iconfont2";
-	src: url('iconfont2.eot'); /* IE9*/
-	src: url('iconfont2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('iconfont2.woff') format('woff'), /* chrome、firefox */ url('iconfont2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('iconfont2.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
-@font-face {
-	font-family: "iconfont3";
-	src: url('iconfont3.eot'); /* IE9*/
-	src: url('iconfont3.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('iconfont3.woff') format('woff'), /* chrome、firefox */ url('iconfont3.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('iconfont3.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
 .iconfont {
 	font-family:"iconfont" !important;
-	font-size:16px;
-	font-style:normal;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-stroke-width: 0.2px;
-	-moz-osx-font-smoothing: grayscale;
-}
-.iconfont2 {
-	font-family:"iconfont2" !important;
 	font-size:16px;
 	font-style:normal;
 	-webkit-font-smoothing: antialiased;
@@ -544,14 +527,14 @@ header nav a span {
 #menu:before {
 	font-style:normal;
 	font-family:"iconfont" !important;
-	content: "\e607";
+	content: "\e602";
 	font-size: 28px;
 	color: #FFFFFF;
 }
 .bac a:before {
 	font-style:normal;
 	font-family:"iconfont" !important;
-	content: "\e602";
+	content: "\e600";
 	font-size: 28px;
 	color: #fff;
 }
@@ -586,43 +569,15 @@ header nav a span {
 	background-size: 11px;
 	left: 10px;
 }
-.nav1, .nav2, .nav3, .nav4, .nav5, .nav6, .nav7, .nav8, .zan, .next {
+.nav1, .nav2, .nav3, .nav4, .nav5, .nav6, .nav7, .nav8, .nav9, .nav10, .zan, .next {
 	font-style:normal;
 	font-family:"iconfont" !important;
 	font-size: 27px;
 	color: #000;
 }
-.nav9 {
-	font-style:normal;
-	font-family:"iconfont2" !important;
-	font-size: 27px;
-	color: #000;
-}
-.nav10 {
-	font-style:normal;
-	font-family:"iconfont3" !important;
-	font-size: 27px;
-	color: #000;
-}
-.Vnav1, .Vnav4, .Vnav5, .Vnav6 {
+.Vnav1, .Vnav4, .Vnav5, .Vnav6,.Vnav2, .Vnav3, .Vnav7, .Vnav8, .Vnav9, .Vnav10, .Vnav11, .Vnav12, .Vnav13 {
 	font-style:normal;
 	font-family:"iconfont" !important;
-	font-size: 28px;
-	color: #c51230;
-	display:block;
-	margin-bottom: 5px;
-}
-.Vnav2, .Vnav3, .Vnav7, .Vnav8, .Vnav9, .Vnav10 {
-	font-style:normal;
-	font-family:"iconfont2" !important;
-	font-size: 28px;
-	color: #c51230;
-	display:block;
-	margin-bottom: 5px;
-}
-.Vnav11 {
-	font-style:normal;
-	font-family:"iconfont3" !important;
 	font-size: 28px;
 	color: #c51230;
 	display:block;
@@ -630,7 +585,7 @@ header nav a span {
 }
 .abtnItem1, .abtnItem2, .abtnItem3 {
 	font-style: normal;
-	font-family: "iconfont2" !important;
+	font-family: "iconfont" !important;
 	font-size: 14px;
 	color: #c51230!important;
 	text-align: center;
@@ -638,17 +593,17 @@ header nav a span {
 	font-weight: bold;
 }
 .abtnItem1:before {
-	content:"\e607";
+	content:"\e60f";
 	margin-right: 2px;
 	font-size:18px;
 }
 .abtnItem2:before {
-	content:"\e608";
+	content:"\e60e";
 	margin-right: 2px;
 	font-size: 18px;
 }
 .abtnItem3:before {
-	content:"\e606";
+	content:"\e60c";
 	margin-right: 2px;
 	font-size: 18px;
 }
@@ -659,64 +614,70 @@ header nav a span {
 	content: "\e600";
 }
 .Vnav8:before {
-	content: "\e601";
+	content: "\e609";
 }
 .Vnav9:before {
 	content: "\e602";
 }
 .Vnav10:before {
-	content: "\e603";
+	content: "\e617";
 }
 .Vnav11:before {
-	content: "\e67e";
+	content: "\e608";
+}
+.Vnav12:before {
+	content: "\e611";
+}
+.Vnav13:before {
+	content: "\e615";
 }
 .Vnav1:before {
 	content: "\e604";
 }
 .Vnav2:before {
-	content: "\e605";
+	content: "\e610";
 }
 .Vnav3:before {
-	content: "\e604";
+	content: "\e60a";
 }
 .Vnav4:before {
-	content: "\e611";
+	content: "\e60b";
 }
 .Vnav5:before {
-	content: "\e60d";
+	content: "\e606";
 }
 .Vnav6:before {
 	content: "\e601";
 }
 .nav1:before {
-	content: "\e606";
+	content: "\e607";
 }
 .nav2:before {
 	content: "\e604";
 }
 .nav3:before {
-	content: "\e60c";
-}
-.nav4:before {
 	content: "\e603";
 }
+.nav4:before {
+	content: "\e601";
+}
 .nav5:before {
-	content: "\e60b";
+	content: "\e605";
 }
 .nav6:before {
 	content: "\e60a";
 }
 .nav7:before {
-	content: "\e601";
+	content: "\e606";
 }
 .nav8:before {
-	content: "\e605";
+	content: "\e613";
 }
 .nav9:before {
-	content: "\e609";
+	content: "\e616";
 }
 .nav10:before {
-	content: "\e67e";
+	content: "\e608";
 }
 .next {
 	transform:rotate(90deg);
@@ -908,6 +869,28 @@ text-shadow:text-shadow: 0px 0px 2px black;
 	vertical-align: middle;
 	color:#888;
 }
+.tab {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border-top: 2px #ccc solid;
+	border-bottom: 2px #ccc solid;
+	box-shadow: aliceblue;
+}
+.tab th {
+	border-bottom: 1px #ccc solid;
+	padding: 8px;
+	vertical-align: middle;
+	color: #616161;
+}
+.tab td {
+	border-bottom: 1px #ccc dotted;
+	text-align: center;
+	padding: 10px 5px;
+	vertical-align: middle;
+	color:#888;
+	font-weight:bold
+}
 .jindu {
 	background: #FFFFFF;
 	border: 2px solid #C8C8C8;
@@ -927,6 +910,10 @@ text-shadow:text-shadow: 0px 0px 2px black;
 	font-size: 25px;
 	color: #FAD200;
 	font-weight: bold;
+
+
+
+
 	width: 100%;
 	text-align: center;
 	z-index: 1;
@@ -1273,7 +1260,7 @@ text-shadow:text-shadow: 0px 0px 2px black;
 	background: #c51230;
 }
 .h33 {
-	height: 26px;
+	height: 30px;
 }
 .h30 {
 	height:30px;
@@ -1294,6 +1281,11 @@ text-shadow:text-shadow: 0px 0px 2px black;
 }
 .w200 {
 	width:80%;
+}
+.w300 {
+width: 300px;
+display: inline-block;
+float: left;
 }
 .w60 {
 	width:70px;
@@ -1321,6 +1313,9 @@ text-shadow:text-shadow: 0px 0px 2px black;
 }
 .pct50 {
 	width:50%;
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
 }
 .pct60 {
 	width:60%!important;
@@ -1467,7 +1462,7 @@ text-shadow:text-shadow: 0px 0px 2px black;
 	line-height: 14px;
 }
 .Logo:before {
-	content: "\e606";
+	content: "\e607";
 	display: inline-block;
 	position: absolute;
 	line-height: 48px;
@@ -1477,7 +1472,7 @@ text-shadow:text-shadow: 0px 0px 2px black;
 }
 .Logo2 {
 	font-style: normal;
-	font-family: "iconfont3" !important;
+	font-family: "iconfont" !important;
 	font-size: 27px;
 	color: #fff;
 	position: absolute;
@@ -1489,7 +1484,7 @@ text-shadow:text-shadow: 0px 0px 2px black;
 	font-weight: bold;
 }
 .Logo2:before {
-	content: "\e67e";
+	content: "\e608";
 	display: inline-block;
 	position: absolute;
 	line-height: 48px;
@@ -1918,7 +1913,7 @@ text-shadow:text-shadow: 0px 0px 2px black;
 	font-weight: bold;
 	font-size: 16px;
 	color: #999;
-	top: 1px;
+	top: 3px;
 	line-height: 22px;
 	vertical-align: top;
 }
@@ -1934,6 +1929,7 @@ footer {
 	text-align: center;
 	font-size: 14px;
 	padding: 5px;
+	clear: both;
 }
 .mh410 {
 	min-height:410px;
@@ -1951,7 +1947,8 @@ footer {
 #scrollUp:before {
 	font-style: normal;
 	font-family: "iconfont" !important;
-	content: "\e613";
+	content: "\e614";
+
 	font-size: 28px;
 	color: #c51230;
 	position: relative;
@@ -2036,8 +2033,8 @@ footer {
 	display: inline-block;
 	border-radius: 50%;
 	overflow: hidden;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	text-align: center;
 	line-height: 30px;
 	vertical-align: middle;
@@ -2125,6 +2122,147 @@ background-position:    0px 0;
 background-position: -700px 0;
 }
 }
+/*-------------------- T-shirt css ------------------------*/
+.t-shirt{
+    background: url(../images/t-shirt/bac.jpg);
+}
+.t-shirt header{
+    height: 8px;
+    background: #000;
+}
+.t-shirt #main {
+padding: 30px 15px;
+max-width: 720px;
+position: initial;
+margin: 0 auto;
+}
+.t-shirt .content {
+border: 1px #ccc dashed;
+min-height: 500px;
+background: #fff;
+clear: both;
+margin-top: 30px;
+padding:10px;
+}
+.t-shirt h2 {
+border-bottom: 1px #000 dotted;
+border-top: 1px #000 dotted;
+height: 40px;
+line-height: 40px;
+font-size: 20px;
+padding-left: 12px;
+}
+.t-slo{}
+.t-slo:before {
+border-color: transparent transparent transparent #000000;
+border-width: 4px;
+border-style: solid;
+content: "";
+display: inline-block;
+margin-right: 5px;
+}
+.t-shirt .w300{
+	padding-right:20px;}
+.t-shirt .swipe{
+    height: 320px;
+}
+.t-shirt .swipe-wrap{}
+.t-shirt .wrap{
+    height: 320px!important;
+}
+.t-shirt .topImg nav #position li{
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+}
+.t-item{
+    margin-top: 15px;
+}
+.t-size {
+display: inline-block;
+background: #fff;
+padding: 6px;
+border: 1px #ccc solid;
+margin-right: 5px;
+margin-bottom: 5px;
+cursor: pointer;
+width: 62px;
+text-align: center;
+}
+.t-size.sel {
+border: 2px #E60000 solid;
+padding: 5px;
+position:relative;
+}
+.t-size.sel b {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 15px;
+height: 15px;
+overflow: hidden;
+background: url(../images/t-shirt/newicon20140910.png) no-repeat 0px 0px;
+}
+.t-color {
+width: 50px;
+height: 15px;
+display: inline-block;
+margin-right: 8px;
+border: 1px #ccc solid;
+cursor: pointer;
+}
+.t-color.sel {
+border: 2px #E60000 solid;
+height: 13px;
+width: 48px;
+position:relative
+}
+.t-color.sel b {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 15px;
+height: 15px;
+overflow: hidden;
+background: url(../images/t-shirt/newicon20140910.png) no-repeat 0px 0px;
+}
+.t-item span{
+    width: 50px;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+.t-shirt .topImg {
+	background:url(../images/t-shirt/bac.png) no-repeat 0 0;
+	background-size:300px;}
+.t-shirt .topImg nav #position li.on{
+	border:1px #000 solid}
+.t-shirt .topImg nav{position:initial}
+.t-shirt #slider figure div a img{
+	width:300px;}
+.t-shirt .w330{width: 318px;}
+.t-b{background-color: #000!important;}
+.t-w{background-color: #fff!important;}
+.t-r{background-color: #CC3300!important}
+.paiming{
+    border-bottom: 1px #ccc dotted;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+}
+.paiming .item1{
+		position:relative
+}
+.paiming .item1 span{
+    margin-right: 5px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.paiming dd span{
+    width: 110px;
+    display: inline-block;
+}
+.paiming dt{font-weight: bold; }
+.paiming dd{overflow: hidden;text-align: center;background: #f8f8f8;margin-top: 5px;}
 /* ------------------- multiply CSS End------------------ */
 /* PC客户端或大屏幕设备: 1028px 至更大 */
 @media screen and (min-width: 1024px) {
@@ -2167,6 +2305,26 @@ background-position: -700px 0;
 #slider figure div.wrap {
 	height: 153px;
 }
+.t-shirt .w300 {
+width: 300px;
+display: block;
+float: none;
+margin: 0 auto;
+padding-right: 0;
+}
+.t-shirt h1{text-align:center}
+.t-shirt .w330 {
+width: 250px;
+}
+.t-right{
+	margin-left:0;
+	margin: 0 auto;
+	width: 300px;
+	margin-top: 20px;
+}
+.t-shirt .content {
+padding:5px;
+}
 .proL {
 }
 .pt {
@@ -2207,4 +2365,3 @@ a, button, input {/* 1.去除android a/button/input标签被点击时产生的�
 	-webkit-tap-highlight-color: rgba(0,0,0,0.2);
 }
 }
-/*Design by liuwz 2014.9.30 CSS rest */

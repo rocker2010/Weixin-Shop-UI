@@ -74,4 +74,8 @@ $('#menu').click(function(){
             navMov();
         }
 	});
+$(".t-color,.t-size").click(function(){
+	$(this).parent().find(".sel").removeClass("sel");
+	$(this).toggleClass("sel");
+	})
 })
